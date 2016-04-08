@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ahmad.tabdemo.ConversationLayout">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/angry"
+                app:hasBorder="false"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/conImg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahmad Khalil"
+                android:id="@+id/conName"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/conImg"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey Man! Let's hang..."
+                android:layout_marginTop="6dp"
+                android:id="@+id/conMsg"
+                android:layout_toRightOf="@id/conImg"
+                android:layout_below="@id/conName"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:30AM"
+                android:id="@+id/conDate"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/conMsg"
+                android:layout_toRightOf="@id/conImg"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="25dp"
+                android:background="#bdc3c7"/>
+        </RelativeLayout>
+
+</RelativeLayout>

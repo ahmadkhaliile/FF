@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ahmad.shitto.Status">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="120dp"
+           android:background="#3498db"
+           android:layout_weight="33.333333">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Followers"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="20dp"
+               android:textColor="#FFF"
+               android:fontFamily="sans-serif-thin"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="67"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="60dp"
+               android:textColor="#FFF"
+               android:textSize="40dp"
+               android:fontFamily="sans-serif-light"
+               />
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="120dp"
+           android:background="#9b59b6"
+           android:layout_weight="33.333333">
+
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:text="Feelings"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="20dp"
+               android:textColor="#FFF"
+               android:fontFamily="sans-serif-thin"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="268"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="60dp"
+               android:textColor="#FFF"
+               android:textSize="40dp"
+               android:fontFamily="sans-serif-light"
+               />
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="120dp"
+           android:background="#e67e22"
+           android:layout_weight="33.333333">
+
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:text="Following"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="20dp"
+               android:textColor="#FFF"
+               android:fontFamily="sans-serif-thin"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="28"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="60dp"
+               android:textColor="#FFF"
+               android:textSize="40dp"
+               android:fontFamily="sans-serif-light"
+               />
+       </RelativeLayout>
+
+   </LinearLayout>
+
+</LinearLayout>

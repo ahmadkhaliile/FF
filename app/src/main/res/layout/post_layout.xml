@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ahmad.tabdemo.PostLayout"
+    android:id="@+id/postLayout">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/post"
+    android:background="#FFF"
+    android:orientation="horizontal"
+   >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:id="@+id/time">
+
+
+        <LinearLayout
+            android:id="@+id/moodColor"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#3498db"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:text="8:30"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-light"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/peroid"
+            android:text="AM"
+            android:textSize="13dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/number"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="70"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="0dp"
+        android:layout_marginTop="15dp">
+
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/userPic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/angry"
+        app:hasBorder="false"
+       android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/postName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#7f8c8d"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="22/10/2016"
+        android:layout_centerHorizontal="true"
+        android:textColor="#7f8c8d"
+        android:layout_below="@id/postName"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="13dp"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/round"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            />
+    </RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/sep"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="#bdc3c7"
+        android:layout_below="@id/post"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcfcfc"
+        android:layout_below="@id/sep"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/post_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/postsome"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-bold"
+            android:textColor="#7f8c8d"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/post_text"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="40dp">
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rect"
+                    android:src="@mipmap/star"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="136"
+                    android:id="@+id/favNum"
+                    android:textColor="#2c3e50"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="40dp">
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rect"
+                    android:src="@mipmap/star"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="136"
+                    android:id="@+id/likeNum"
+                    android:textColor="#2c3e50"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="40dp">
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rect"
+                    android:src="@mipmap/star"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="136"
+                    android:id="@+id/ReplyNum"
+                    android:textColor="#2c3e50"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="40dp">
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rect"
+                    android:src="@mipmap/star"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="136"
+                    android:id="@+id/elseNum"
+                    android:textColor="#2c3e50"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

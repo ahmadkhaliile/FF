@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ahmad.tabdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Feelings" />
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Navigate" />
+        <activity android:name=".Conversations" />
+        <activity android:name=".ConversationLayout" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Notifications" />
+        <activity android:name=".Notification_layout" />
+        <activity android:name=".Comunities" />
+        <activity android:name=".ComLayout" />
+        <activity android:name=".Followers_Layout" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Add_Post" />
+        <activity android:name=".OtherProfile" />
+        <activity android:name=".Feed"></activity>
+    </application>
+
+</manifest>
